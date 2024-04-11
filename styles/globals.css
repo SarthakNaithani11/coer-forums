@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  :root{
+    --color-hot-red: #E50914;
+  }
+}
+
+@layer components{
+  .navBtn{
+    @apply hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out;
+  }
+
+  .btn{
+    @apply h-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out;
+  }
+
+  .icon {
+    @apply cursor-pointer w-9 h-9 hover:bg-red-700 hover:bg-opacity-10 flex items-center justify-center rounded-full transition ease-out;
+  }
+
+  .owner{
+    @apply flex flex-row-reverse px-2 items-end;
+  }
+
+  .active{
+    @apply bg-[#121212] text-hotred;
+  }
+}
